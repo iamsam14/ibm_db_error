@@ -1,0 +1,1089 @@
+Collecting ibm_db
+  Using cached ibm_db-3.1.4.tar.gz (1.4 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Building wheels for collected packages: ibm_db
+  Building wheel for ibm_db (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Building wheel for ibm_db (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [1070 lines of output]
+      Detected 64-bit Python
+      Detected platform = darwin, uname = x86_64
+      Pre-requisite check [gcc] : Passed
+      Pre-requisite check [Python.h] : Passed
+      running bdist_wheel
+      running build
+      running build_py
+      creating build/lib.macosx-10.9-universal2-cpython-39
+      copying ibm_db_dbi.py -> build/lib.macosx-10.9-universal2-cpython-39
+      copying testfunctions.py -> build/lib.macosx-10.9-universal2-cpython-39
+      copying ibmdb_tests.py -> build/lib.macosx-10.9-universal2-cpython-39
+      creating build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_alltypes.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_111_FieldNumAddCol.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_122_FieldNameDiffCaseColNames.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_065_FilterTableName.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_045_FetchTupleBinaryData_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_158_FetchAssocNestedSelects_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_251_FreeResult_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_221_100PersistentConns.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_200_MultipleRsltsetsUniformColDefs.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_bool_callproc.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_042_FetchTupleMany_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_020_RollbackDelete.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_123_FieldNamePos_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_197_StatisticsIndexes.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_002_ConnDbUncatalogedConn.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_232_FieldTypePosName.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_InsertRetrieveDateTimeTypeColumn.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_015_InsertDeleteRowCount_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_041_FetchTupleMany_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_047_FetchTupleMany_06.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_140_BindParamSelectStmt.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_160_FetchBoth.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_050_AutocommitStatus.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_004_ConnWrongUserPwd.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_114_NumericTest_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_070_Close.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_024_ForeignKeys.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_031_ResultIndexPosition.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_147_PrepareWithWrongType.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_051_SetAutocommit_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_019_selectRowcountPrefetchPrepOpt.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_recreateDB.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_054_CursorType.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_161_FetchBothNestedSelects_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_310_ClientInfo.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_003_NumAffectedRows.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_err_executemany.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_265_NoAffectedRows.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_066_TableObjects.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_264_InsertRetrieveBIGINTTypeColumn.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_113_DateTest.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_240_FieldWidthPosName_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_044_FetchTupleMany_04.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_261_FetchObjectAccess.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_005_ConnBadUserBadPwd.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_159a_FetchAssocSeveralRows_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_211_FieldDisplaySize_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_180_StmtErrMsg.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_143_BindParamInsertStmtNoneParam.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_157a_FetchAssocWithoutScrollableCursorErr.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_212_FieldDisplaySize_03.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_warn.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_decimal.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_6528_ScopingProblemBindParam.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_062_Tables_03.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_cursortype.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_152_FetchAssocSelect_03.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_151_FetchAssocSelect_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_000_PrepareDb.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_201_MultipleRsltsetsDiffColDefs.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_6561_InsertNULLValues.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_016_InsertDeleteRowCount_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_032_ResultIndexName.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_034_FetchAssoc.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_241_FieldWidthPosName_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/__init__.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_013_KeysetDrivenCursorSelect02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_300_ServerInfo.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_033_ResultOutSequenceColumn.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_141_BindParamSelectStmtMultipleParams_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_145_BindRetrieveNoneEmptyString.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_053_AttrThruConn.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_043_FetchTupleMany_03.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_124_FieldNamePos_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_unicodeTable.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_092_ConnmsgWrongPwd.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_120_FieldName.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_6755_ExtraNULLChar_ResultCLOBCol.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_039_FetchRowIndexPosNested_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_trusted_context_connect.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_035_FetchRow_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_060_Tables_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_createdbNX.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_SPInOutBlob.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_038_FetchRowIndexPosNested_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_155_FetchAssocSelect_05.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_014_KeysetDrivenCursorNegativeRow.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_6792_FieldTypeRetStrDatetimeTimestamp.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_116_ConnActive.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_048_FetchTupleBinaryData_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_196_InsertRetrieveXMLData_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_007_pConnPassingOpts.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_103_NumFieldsSelect_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_231_FieldTypeName.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_071_CloseSuccess.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_checkBooleanType.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_090_ConnmsgWrongDbAlias.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_001_ConnDb.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_063_Tables_04.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_017_selectRowcountPrefetchSTMTOpt.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_159_FetchAssocSeveralRows_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_195_InsertRetrieveXMLData_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_008_ColumnInfo.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_021_CommitDelete.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_230_FieldTypePos.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_trusted_context_pconnect.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_currentschema.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_064_Tables_05.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_046_FetchTupleMany_05.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_booleanInsertSelect.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_142_BindParamSelectStmtMultipleParams_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_125_FieldNamePos_03.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_250_FreeResult_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_144_BindParamInsertStmtPARAM_FILE.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_156_FetchAssocNestedSelects_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_049_InsertNoneParam.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_006_ConnPassingOpts.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_061_Tables_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_100_SelectDeleteInsertFieldCount.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_110_FieldNum.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_52949_TestSPIntVarcharXml.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_091_ConnmsgWrongUser.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_133_ExecuteLongInputParams.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_082_ConnWrongPwd.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_025_PrimaryKeys.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_101_InsertDeleteFieldCount.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_03a_ResultNonExistCol.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_alltypesarray.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_080_ConnWrongDbAlias.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_148_CallSPDiffBindPattern_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_190_ColumnsTable_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_decfloat.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_213_FieldDisplaySize_04.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_150_FetchAssocSelect_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_018_selectRowcountPrefetchSetOpt.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_157b_FetchAssocScrollableCursor_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_011_DeleteRowCount.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_154_AllFetches.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_030_Result.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_132_ExecuteStatementArrayMultipleParams.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_146_CallSPINAndOUTParams.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_191_ColumnsTable_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_execute_many.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_010_UpdateRowCount.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_012_KeysetDrivenCursorSelect01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_146a_CallSPINAndOUT_Blob_Param.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_115_NumericTest_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_220_PersistentConn.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_052_SetAutocommit_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_036_FetchRow_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_210_FieldDisplaySize_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_153_FetchAssocSelect_04.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_037_FetchRowIndexPos.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_131_PrepareExecuteSelectStatementParams.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_022_RollbackInsert.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_162_FetchBothNestedSelects_02.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_260_FetchTupleMany_07.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_SPInOutZero.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_081_ConnWrongUser.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_040_FetchTuple.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_createDropDB.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_311_InsertSelectDeleteNumLiterals.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_121_FieldNameAddCol.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_023_ColumnPrivileges.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_130_PrepExecuteSelectStmt.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_157_FetchAssocScrollableCursor_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_112_FieldNumDiffCaseColNames.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_setgetOption.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/test_102_NumFieldsSelect_01.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      creating build/lib.macosx-10.9-universal2-cpython-39/certs
+      copying certs/__init__.py -> build/lib.macosx-10.9-universal2-cpython-39/certs
+      creating build/lib.macosx-10.9-universal2-cpython-39/ibm_db_dlls
+      copying ibm_db_dlls/__init__.py -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_dlls
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver
+      copying clidriver/__init__.py -> build/lib.macosx-10.9-universal2-cpython-39/clidriver
+      running egg_info
+      writing ibm_db.egg-info/PKG-INFO
+      writing dependency_links to ibm_db.egg-info/dependency_links.txt
+      writing top-level names to ibm_db.egg-info/top_level.txt
+      reading manifest file 'ibm_db.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      warning: no previously-included files found matching 'config.py'
+      adding license file 'LICENSE'
+      writing manifest file 'ibm_db.egg-info/SOURCES.txt'
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.bin' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.bin' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.bin' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.bin' to be distributed and are
+              already explicitly excluding 'clidriver.bin' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.bnd' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.bnd' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.bnd' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.bnd' to be distributed and are
+              already explicitly excluding 'clidriver.bnd' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.cfg' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.cfg' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.cfg' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.cfg' to be distributed and are
+              already explicitly excluding 'clidriver.cfg' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.cfgcache' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.cfgcache' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.cfgcache' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.cfgcache' to be distributed and are
+              already explicitly excluding 'clidriver.cfgcache' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.conv.alt' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.conv.alt' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.conv.alt' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.conv.alt' to be distributed and are
+              already explicitly excluding 'clidriver.conv.alt' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.conv.ms' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.conv.ms' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.conv.ms' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.conv.ms' to be distributed and are
+              already explicitly excluding 'clidriver.conv.ms' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.include' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.include' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.include' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.include' to be distributed and are
+              already explicitly excluding 'clidriver.include' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.lib' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.lib' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.lib' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.lib' to be distributed and are
+              already explicitly excluding 'clidriver.lib' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.lib.icc' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.lib.icc' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.lib.icc' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.lib.icc' to be distributed and are
+              already explicitly excluding 'clidriver.lib.icc' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.lib.icc.C.icc.icclib' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.lib.icc.C.icc.icclib' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.lib.icc.C.icc.icclib' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.lib.icc.C.icc.icclib' to be distributed and are
+              already explicitly excluding 'clidriver.lib.icc.C.icc.icclib' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.lib.icc.N.icc.icclib' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.lib.icc.N.icc.icclib' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.lib.icc.N.icc.icclib' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.lib.icc.N.icc.icclib' to be distributed and are
+              already explicitly excluding 'clidriver.lib.icc.N.icc.icclib' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.license' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.license' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.license' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.license' to be distributed and are
+              already explicitly excluding 'clidriver.license' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.license.UNIX' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.license.UNIX' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.license.UNIX' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.license.UNIX' to be distributed and are
+              already explicitly excluding 'clidriver.license.UNIX' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.msg' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.msg' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.msg' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.msg' to be distributed and are
+              already explicitly excluding 'clidriver.msg' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      /private/var/folders/y7/ysy_r_bs7v75tx0lf8qv6sy40000gn/T/pip-build-env-13wa2xo3/overlay/lib/python3.9/site-packages/setuptools/command/build_py.py:201: _Warning: Package 'clidriver.security64.plugin.IBM.client' is absent from the `packages` configuration.
+      !!
+      
+              ********************************************************************************
+              ############################
+              # Package would be ignored #
+              ############################
+              Python recognizes 'clidriver.security64.plugin.IBM.client' as an importable package[^1],
+              but it is absent from setuptools' `packages` configuration.
+      
+              This leads to an ambiguous overall configuration. If you want to distribute this
+              package, please make sure that 'clidriver.security64.plugin.IBM.client' is explicitly added
+              to the `packages` configuration field.
+      
+              Alternatively, you can also rely on setuptools' discovery methods
+              (for example by using `find_namespace_packages(...)`/`find_namespace:`
+              instead of `find_packages(...)`/`find:`).
+      
+              You can read more about "package discovery" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+      
+              If you don't want 'clidriver.security64.plugin.IBM.client' to be distributed and are
+              already explicitly excluding 'clidriver.security64.plugin.IBM.client' via
+              `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+              you can try to use `exclude_package_data`, or `include-package-data=False` in
+              combination with a more fine grained `package-data` configuration.
+      
+              You can read more about "package data files" on setuptools documentation page:
+      
+              - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+      
+      
+              [^1]: For Python, any directory (with suitable naming) can be imported,
+                    even if it does not contain any `.py` files.
+                    On the other hand, currently there is no concept of package data
+                    directory, all directories are treated like packages.
+              ********************************************************************************
+      
+      !!
+        check.warn(importable)
+      copying ibm_db_tests/pic1.jpg -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/pic1_out.jpg -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/spook.png -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying ibm_db_tests/spook_out.png -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_tests
+      copying certs/ibm_certs.pem -> build/lib.macosx-10.9-universal2-cpython-39/certs
+      copying ibm_db_dlls/ibm_db.dll -> build/lib.macosx-10.9-universal2-cpython-39/ibm_db_dlls
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      copying clidriver/bin/db2cli -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      copying clidriver/bin/db2diag -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      copying clidriver/bin/db2drdat -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      copying clidriver/bin/db2dsdcfgfill -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      copying clidriver/bin/db2level -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      copying clidriver/bin/db2support -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      copying clidriver/bin/db2trc -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bin
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/bnd
+      copying clidriver/bnd/db2ajgrt.bnd -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bnd
+      copying clidriver/bnd/db2cli.bnd -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bnd
+      copying clidriver/bnd/db2cli.lst -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bnd
+      copying clidriver/bnd/db2clipk.bnd -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bnd
+      copying clidriver/bnd/db2clist.bnd -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bnd
+      copying clidriver/bnd/db2spcdb.bnd -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/bnd
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/cfg
+      copying clidriver/cfg/DigiCertGlobalRootCA.arm -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/cfg
+      copying clidriver/cfg/db2cli.ini.sample -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/cfg
+      copying clidriver/cfg/db2dsdriver.cfg.sample -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/cfg
+      copying clidriver/cfg/db2dsdriver.xsd -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/cfg
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/cfgcache
+      copying clidriver/cfgcache/conlic.bin -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/cfgcache
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/04370923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/08500923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/08501252.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/08600923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/08630923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09230437.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09230850.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09230860.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09231043.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09231051.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09231114.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09231208.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09231252.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09231275.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09241252.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/09370950.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/10430923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/10510923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/11140923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/12080923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/12520850.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/12520923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/12750923.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/1388ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/IBM00850.ucs -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/IBM00923.ucs -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      copying clidriver/conv/alt/IBM01252.ucs -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/alt
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/0930ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/0939ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/0943ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/0954ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/1390ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/1399ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/5039ucs2.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      copying clidriver/conv/ms/ucs20943.cnv -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/conv/ms
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sql.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlca.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlcli.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlcli1.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlda.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlenv.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlext.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlstate.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlsystm.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqltypes.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlucode.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      copying clidriver/include/sqlunx.h -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/include
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib
+      copying clidriver/lib/libDB2xml4c.58.0.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib
+      copying clidriver/lib/libDB2xml4c.58.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib
+      copying clidriver/lib/libDB2xml4c.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib
+      copying clidriver/lib/libdb2.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib
+      copying clidriver/lib/libdb2clixml4c.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8acmeidup.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8cms.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8dbfl.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8drld.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8iccs.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8kicc.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8km.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8km2.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8ldap.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8p11.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8ssl.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8sys.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      copying clidriver/lib/icc/libgsk8valn.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/C
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/C/icc
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/C/icc/icclib
+      copying clidriver/lib/icc/C/icc/icclib/ICCSIG.txt -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/C/icc/icclib
+      copying clidriver/lib/icc/C/icc/icclib/libicclib084.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/C/icc/icclib
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/N
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/N/icc
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/N/icc/icclib
+      copying clidriver/lib/icc/N/icc/icclib/ICCSIG.txt -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/N/icc/icclib
+      copying clidriver/lib/icc/N/icc/icclib/libicclib085.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/lib/icc/N/icc/icclib
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/license
+      copying clidriver/license/odbc_REDIST.txt -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license
+      copying clidriver/license/odbc_notices.txt -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_cs -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_de -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_el -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_en -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_es -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_fr -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_in -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_it -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_ja -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_ko -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_lt -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_pl -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_pt -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_ru -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_sl -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_tr -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_zh -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      copying clidriver/license/UNIX/odbc_LI_zh_TW -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/license/UNIX
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2adm.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2admh.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2caem.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2cklog.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2cli.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2clia1.lst -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2clias.lst -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2clih.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2clit.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2clp.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2clp2.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2diag.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2fodc.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2sql.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2sqlh.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2stt.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      copying clidriver/msg/en_US.iso88591/db2supp.mo -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/msg/en_US.iso88591
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/security64
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/security64/plugin
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/security64/plugin/IBM
+      creating build/lib.macosx-10.9-universal2-cpython-39/clidriver/security64/plugin/IBM/client
+      copying clidriver/security64/plugin/IBM/client/._IBMIAMauth.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/security64/plugin/IBM/client
+      copying clidriver/security64/plugin/IBM/client/IBMIAMauth.dylib -> build/lib.macosx-10.9-universal2-cpython-39/clidriver/security64/plugin/IBM/client
+      running build_ext
+      building 'ibm_db' extension
+      creating build/temp.macosx-10.9-universal2-cpython-39
+      gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -fwrapv -O3 -Wall -arch arm64 -arch x86_64 -g -Iclidriver/include -I/Library/Frameworks/Python.framework/Versions/3.9/include/python3.9 -c ibm_db.c -o build/temp.macosx-10.9-universal2-cpython-39/ibm_db.o
+      In file included from ibm_db.c:27:
+      In file included from /Library/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h:11:
+      In file included from /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/limits.h:21:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h:63:
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:807:2: error: Unsupported architecture
+      #error Unsupported architecture
+       ^
+      In file included from ibm_db.c:27:
+      In file included from /Library/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h:11:
+      In file included from /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/limits.h:21:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h:64:
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h:8:2: error: architecture not supported
+      #error architecture not supported
+       ^
+      In file included from ibm_db.c:27:
+      In file included from /Library/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h:25:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:64:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:71:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h:27:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:33:
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h:34:2: error: architecture not supported
+      #error architecture not supported
+       ^
+      In file included from ibm_db.c:27:
+      In file included from /Library/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h:25:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:64:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:71:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h:27:
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:55:9: error: unknown type name '__int64_t'
+      typedef __int64_t       __darwin_blkcnt_t;      /* total blocks */
+              ^
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:56:9: error: unknown type name '__int32_t'; did you mean '__int128_t'?
+      typedef __int32_t       __darwin_blksize_t;     /* preferred block size */
+              ^
+      note: '__int128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:57:9: error: unknown type name '__int32_t'; did you mean '__int128_t'?
+      typedef __int32_t       __darwin_dev_t;         /* dev_t */
+              ^
+      note: '__int128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:60:9: error: unknown type name '__uint32_t'; did you mean '__uint128_t'?
+      typedef __uint32_t      __darwin_gid_t;         /* [???] process and group IDs */
+              ^
+      note: '__uint128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:61:9: error: unknown type name '__uint32_t'; did you mean '__uint128_t'?
+      typedef __uint32_t      __darwin_id_t;          /* [XSI] pid_t, uid_t, or gid_t*/
+              ^
+      note: '__uint128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:62:9: error: unknown type name '__uint64_t'
+      typedef __uint64_t      __darwin_ino64_t;       /* [???] Used for 64 bit inodes */
+              ^
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:68:9: error: unknown type name '__darwin_natural_t'
+      typedef __darwin_natural_t __darwin_mach_port_name_t; /* Used by mach */
+              ^
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:70:9: error: unknown type name '__uint16_t'; did you mean '__uint128_t'?
+      typedef __uint16_t      __darwin_mode_t;        /* [???] Some file attributes */
+              ^
+      note: '__uint128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:71:9: error: unknown type name '__int64_t'
+      typedef __int64_t       __darwin_off_t;         /* [???] Used for file sizes */
+              ^
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:72:9: error: unknown type name '__int32_t'; did you mean '__int128_t'?
+      typedef __int32_t       __darwin_pid_t;         /* [???] process and group IDs */
+              ^
+      note: '__int128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:73:9: error: unknown type name '__uint32_t'; did you mean '__uint128_t'?
+      typedef __uint32_t      __darwin_sigset_t;      /* [???] signal set */
+              ^
+      note: '__uint128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:74:9: error: unknown type name '__int32_t'; did you mean '__int128_t'?
+      typedef __int32_t       __darwin_suseconds_t;   /* [???] microseconds */
+              ^
+      note: '__int128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:75:9: error: unknown type name '__uint32_t'; did you mean '__uint128_t'?
+      typedef __uint32_t      __darwin_uid_t;         /* [???] user IDs */
+              ^
+      note: '__uint128_t' declared here
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:76:9: error: unknown type name '__uint32_t'; did you mean '__uint128_t'?
+      typedef __uint32_t      __darwin_useconds_t;    /* [???] microseconds */
+              ^
+      note: '__uint128_t' declared here
+      In file included from ibm_db.c:27:
+      In file included from /Library/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h:25:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:64:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:71:
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h:43:9: error: unknown type name '__uint32_t'; did you mean '__uint128_t'?
+      typedef __uint32_t      __darwin_wctype_t;
+              ^
+      note: '__uint128_t' declared here
+      In file included from ibm_db.c:27:
+      In file included from /Library/Frameworks/Python.framework/Versions/3.9/include/python3.9/Python.h:25:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:64:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:75:
+      In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h:31:
+      /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h:37:2: error: architecture not supported
+      #error architecture not supported
+       ^
+      fatal error: too many errors emitted, stopping now [-ferror-limit=]
+      20 errors generated.
+      error: command '/usr/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for ibm_db
+Failed to build ibm_db
+ERROR: Could not build wheels for ibm_db, which is required to install pyproject.toml-based projects
